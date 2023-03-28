@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.Design.Serialization;
+using System.Diagnostics.Contracts;
 
 public class SayaTubeVideo
 {
@@ -8,6 +9,7 @@ public class SayaTubeVideo
 
     public SayaTubeVideo(string tittle)
     {
+        Contract.Requires(tittle.Length <= 200 && tittle == null);
         this.tittle = tittle;
         Random i= new Random();
         id = i.Next(100000);
@@ -16,6 +18,7 @@ public class SayaTubeVideo
 
     public void IncreasePlayCount(int playCount)
     {
+        Contract.Requires(playCount <= 25000000 && playCount < 0);
         this.playCount = this.playCount + playCount;
     }
 
@@ -37,6 +40,7 @@ public class SayaTubeUser
 
     public SayaTubeUser(string username)
     {
+        Contract.Requires(!string.IsNullOrEmpty(username) && username.Length <= 100);
         this.username = username;
         Random i = new Random();
         id = i.Next(100000);
@@ -49,24 +53,38 @@ public class SayaTubeUser
         int totPlayCount = 0;
         for(int i = 0; i<uploadedVideos.Count; i++)
         {
-            totPlayCount = totPlayCount + uploadedVideos[i].getPlayCount();
+            try
+            {
+                checked 
+                {
+                    totPlayCount = totPlayCount + uploadedVideos[i].getPlayCount();
+                }
+            }
+            catch (OverflowException OverExcept)
+            {
+                Console.WriteLine("Angka Penjumlahan Overflow");
+            }
         }
         return totPlayCount;
     }
     
     public void AddVideo(SayaTubeVideo video)
     {
+        Contract.Requires(video != null && video.getPlayCount() < int.MaxValue);
         uploadedVideos.Add(video);
     }
 
     public void PrintAllVideoPlayCount()
     {
+        
         Console.WriteLine("User : " + this.username);
         for(int i = 0; i<uploadedVideos.Count; i++)
         {
+            Contract.Ensures(i == 8);
             Console.Write("Video " + (i+1) + " Judul: ");
             uploadedVideos[i].PrintVideoDetails();
         }
+        
     }
 }
 
