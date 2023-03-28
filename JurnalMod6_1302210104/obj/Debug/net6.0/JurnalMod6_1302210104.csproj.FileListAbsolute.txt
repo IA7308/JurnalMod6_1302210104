@@ -1,0 +1,15 @@
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\obj\Debug\net6.0\JurnalMod6_1302210104.csproj.AssemblyReference.cache
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\obj\Debug\net6.0\JurnalMod6_1302210104.GeneratedMSBuildEditorConfig.editorconfig
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\obj\Debug\net6.0\JurnalMod6_1302210104.AssemblyInfoInputs.cache
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\obj\Debug\net6.0\JurnalMod6_1302210104.AssemblyInfo.cs
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\obj\Debug\net6.0\JurnalMod6_1302210104.csproj.CoreCompileInputs.cache
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\bin\Debug\net6.0\JurnalMod6_1302210104.exe
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\bin\Debug\net6.0\JurnalMod6_1302210104.deps.json
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\bin\Debug\net6.0\JurnalMod6_1302210104.runtimeconfig.json
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\bin\Debug\net6.0\JurnalMod6_1302210104.dll
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\bin\Debug\net6.0\JurnalMod6_1302210104.pdb
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\obj\Debug\net6.0\JurnalMod6_1302210104.dll
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\obj\Debug\net6.0\refint\JurnalMod6_1302210104.dll
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\obj\Debug\net6.0\JurnalMod6_1302210104.pdb
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\obj\Debug\net6.0\JurnalMod6_1302210104.genruntimeconfig.cache
+E:\JurnalMod6_1302210104\JurnalMod6_1302210104\obj\Debug\net6.0\ref\JurnalMod6_1302210104.dll
